@@ -1,0 +1,11 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_ntf_product_user,NTFoods Product User Access,model_ntf_product,ntf_group_user,1,0,0,0
+access_ntf_product_manager,NTFoods Product Manager Access,model_ntf_product,ntf_group_manager,1,1,1,1
+access_ntf_category_user,NTFoods Category User Access,model_ntf_category,ntf_group_user,1,0,0,0
+access_ntf_category_manager,NTFoods Category Manager Access,model_ntf_category,ntf_group_manager,1,1,1,1
+access_ntf_cuisine_user,NTFoods Cuisine User Access,model_ntf_cuisine,ntf_group_user,1,0,0,0
+access_ntf_cuisine_manager,NTFoods Cuisine Manager Access,model_ntf_cuisine,ntf_group_manager,1,1,1,1
+access_ntf_brand_user,NTFoods Brand User Access,model_ntf_brand,ntf_group_user,1,0,0,0
+access_ntf_brand_manager,NTFoods Brand Manager Access,model_ntf_brand,ntf_group_manager,1,1,1,1
+access_ntf_department_user,NTFoods Department User Access,model_ntf_department,ntf_group_user,1,0,0,0
+access_ntf_department_manager,NTFoods Department Manager Access,model_ntf_department,ntf_group_manager,1,1,1,1

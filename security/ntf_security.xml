@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+<odoo>
+
+    <record id="module_ntf_category" model="ir.module.category">
+        <field name="name">NTFoods</field>
+    </record>
+
+    <!-- NTFoods User Group -->
+    <record id="ntf_group_user" model="res.groups">
+        <field name="name">User</field>
+        <field name="category_id"
+               ref="module_ntf_category"/>
+        <field name="implied_ids"
+               eval="[(4, ref('base.group_user'))]"/>
+    </record>
+
+    <!-- NTFoods Manager Group -->
+    <record id="ntf_group_manager" model="res.groups">
+        <field name="name">Manager</field>
+        <field name="category_id"
+               ref="module_ntf_category"/>
+        <field name="implied_ids"
+               eval="[(4, ref('ntf_group_user'))]"/>
+        <field name="users"
+               eval="[(4, ref('base.user_root')),
+                    (4, ref('base.user_admin'))]"/>
+    </record>
+
+</odoo>

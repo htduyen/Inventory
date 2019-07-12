@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<odoo>
+
+  <record id="ntf_view_tree_category" model="ir.ui.view">
+      <field name="name">Product Category Tree Ntf_food</field>
+      <field name="model">ntf.category</field>
+      <field name="arch" type="xml">
+          <tree string="Tree view">
+              <field name="name"/>
+              <field name="complete_name" string="Product Category"/>
+              <field name="sequence"/>
+          </tree>
+      </field>
+  </record>
+
+  <record id="ntf_view_form_category" model="ir.ui.view">
+    <field name="name">Product Category Form ntf-food</field>
+    <field name="model">ntf.category</field>
+    <field name="arch" type="xml">
+        <form>
+          <group>
+
+              <group>
+                  <field name="name" />
+                  <field name="parent_id" />
+                  <field name="sequence" />
+              </group>
+
+              <group>
+                  <field name="image" widget="image" class = "oe_avatar" nolabel="1"></field>
+              </group>
+
+          </group>
+
+      </form>
+    </field>
+  </record>
+</odoo>

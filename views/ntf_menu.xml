@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<odoo>
+    <menuitem id="ntf_menu_root"
+              name="NTFoods"
+              web_icon="ntfoods,static/description/icon.png"
+    />
+
+    <menuitem id="ntf_menu_data"
+              name="Data"
+              parent="ntf_menu_root"
+    />
+
+    <act_window id="ntf_action_product_template_action_product"
+                name="Products"
+                res_model="product.template"
+                view_mode="kanban,tree,form"
+    />
+
+    <menuitem id="ntf_menu_product"
+              name="Products"
+              parent="ntf_menu_data"
+              action="ntf_action_product_template_action_product"
+              sequence="1"
+    />
+
+
+    <act_window id="ntf_action_product_category_department"
+                name="Departments"
+                res_model="ntf.department"
+                view_mode="tree,form"
+    />
+
+    <menuitem id="ntf_menu_category"
+              name="Departments"
+              parent="ntf_menu_data"
+              action="ntf_action_product_category_department"
+              sequence="3"
+    />
+
+
+    <act_window id="ntf_action_product_template_action_category"
+                name="Categories"
+                res_model="ntf.category"
+                view_mode="tree,form"
+    />
+
+    <menuitem id="ntf_menu_category"
+              name="Categories"
+              parent="ntf_menu_data"
+              action="ntf_action_product_template_action_category"
+              sequence="4"
+    />
+
+</odoo>

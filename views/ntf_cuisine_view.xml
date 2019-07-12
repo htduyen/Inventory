@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<odoo>
+
+  <record id="ntf_view_tree_cuisine" model="ir.ui.view">
+      <field name="name">Cuisine Tree Ntf_food</field>
+      <field name="model">ntf.cuisine</field>
+      <field name="arch" type="xml">
+          <tree string="Tree view">
+              <field name="name"/>
+              <field name="create_uid"></field>
+              <field name="create_date"></field>
+          </tree>
+      </field>
+  </record>
+
+  <record id="ntf_view_form_cuisine" model="ir.ui.view">
+    <field name="name">Cuisine Form ntf-food</field>
+    <field name="model">ntf.cuisine</field>
+    <field name="arch" type="xml">
+        <form>
+          <group>
+
+              <group>
+                  <field name="name" />
+                  <field name="descr"></field>
+              </group>
+
+              <group>
+                  <field name="image" widget="image" class = "oe_avatar" nolabel="1"></field>
+              </group>
+
+          </group>
+
+      </form>
+    </field>
+  </record>
+</odoo>
